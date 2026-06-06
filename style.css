@@ -781,7 +781,7 @@ header .content .login-form .login-link a:hover {
 
 .section-heading p {
     color: #777;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
@@ -868,13 +868,223 @@ header .content .login-form .login-link a:hover {
     width: fit-content;
     margin: 1rem auto 0;
     position: relative;
+    border-radius: 3rem;
     transform: translateY(85%);
 }
 
-.btn {
+.review {
+    padding: 4rem 8%;
+    background: var(--light);
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.review-card {
+    background: var(--white);
+    max-width: 65rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: .4s ease;
+}
+
+.review-avatar {
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.review-stars {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.review-stars i {
+    color: yellow;
+    font-size: 1.1rem;
+}
+
+.review-text {
+    font-size: 1.5rem;
+    line-height: 1.9;
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.review-name {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.review-role {
+    color: var(--gray);
+}
+
+.review-dots {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: var(--gray);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.dot.active {
+    background: var(--primary);
+    transform: scale(1.2);
+}
+
+.review-card.fade {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.review-wrapper {
+    position: relative;
+    max-width: 70rem;
+    margin: auto;
+}
+
+.prev-btn,
+.next-btn {
     position: absolute;
-    bottom: -0.5rem;
-    right: -5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: .3s ease;
+}
+
+.prev-btn {
+    left: -15rem;
+}
+
+.next-btn {
+    right: -15rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Contact Section */
+.contact {
+    padding: 120px 10%;
+    background: #f8fbff;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.contact-card {
+    background: var(--white);
+
+    padding: 2.5rem 2rem;
+
+    border-radius: 2rem;
+
+    text-align: center;
+
+    box-shadow: var(--box-shadow);
+
+    transition: .4s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-icon {
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+
+    color: white;
+}
+
+.contact-card h3 {
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+}
+
+.contact-card p {
+    color: var(--light-color);
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+
+    flex: 1;
+}
+
+.contact-card .btn {
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    width: 75%;
+}
+
+/* PLATFORM COLORS */
+
+.telegram-bg {
+    background: #229ED9;
+}
+
+.email-bg {
+    background: #EA4335;
+}
+
+.facebook-bg {
+    background: #1877F2;
+}
+
+.tiktok-bg {
+    background: #111111;
 }
 
 @media (max-width: 991px) {
@@ -942,6 +1152,30 @@ header .content .login-form .login-link a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Review Section */
+    .review-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .review-card {
+        max-width: 50rem;
+    }
+
+    .prev-btn {
+        left: -8rem;
+    }
+
+    .next-btn {
+        right: -8rem;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1077,9 +1311,61 @@ header .content .login-form .login-link a:hover {
         transform: translateY(-10px);
     }
 
-    .btn {
-        right: -12rem;
-        scale: calc(1.1);
+    /* Review Section  */
+    .review {
+        padding: 100px 5%;
+    }
+
+    .review-container {
+        flex-direction: column;
+    }
+
+    .review-card {
+        order: 1;
+        padding: 1.5rem;
+        max-width: 40rem;
+    }
+
+    .prev-btn,
+    .next-btn {
+        order: 2;
+    }
+
+    .prev-btn {
+        left: -8.5rem;
+    }
+
+    .next-btn {
+        right: -8.5rem;
+    }
+
+    .review-avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+
+    /* Contact section */
+    .contact {
+        padding: 100px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-icon {
+        width: 4.5rem;
+        height: 4.5rem;
+
+        font-size: 1.5rem;
     }
 }
 
@@ -1128,5 +1414,22 @@ header .content .login-form .login-link a:hover {
 
     .shop-btn-wrapper .btn {
         width: 75%;
+    }
+
+    .review-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .review-card {
+        max-width: 35rem;
+    }
+
+    .prev-btn {
+        left: -7rem;
+    }
+
+    .next-btn {
+        right: -7rem;
     }
 }

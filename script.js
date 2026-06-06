@@ -393,3 +393,91 @@ document.addEventListener("keydown", (e) => {
         modal.classList.remove("active");
     }
 });
+
+// Review Section
+const reviews = [
+
+    {
+        initials: "SJ",
+        name: "Sarah Johnson",
+        role: "Pet Owner",
+        text: "The grooming service was exceptional! My Labrador came back looking fantastic and happier than ever. The staff were professional and incredibly caring."
+    },
+
+    {
+        initials: "MB",
+        name: "Michael Brown",
+        role: "Cat Parent",
+        text: "I left my cat for a week at the pet hotel and received daily updates. The team treated her like family and made me feel completely at ease."
+    },
+
+    {
+        initials: "EW",
+        name: "Emma Wilson",
+        role: "Dog Owner",
+        text: "The spa treatment and daycare package exceeded my expectations. My dog absolutely loved every moment and came home relaxed and happy."
+    }
+
+];
+
+let current = 0;
+
+const avatar = document.querySelector(".review-avatar");
+const text = document.querySelector(".review-text");
+const nameEl = document.querySelector(".review-name");
+const role = document.querySelector(".review-role");
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+
+const card = document.querySelector(".review-card");
+const dots = document.querySelectorAll(".dot");
+
+function showReview(index) {
+    card.classList.add("fade");
+    setTimeout(() => {
+        avatar.textContent = reviews[index].initials;
+        text.textContent = reviews[index].text;
+        nameEl.textContent = reviews[index].name;
+        role.textContent = reviews[index].role;
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[index].classList.add("active");
+        card.classList.remove("fade");
+    }, 200);
+}
+
+nextBtn.addEventListener("click", () => {
+
+    current++;
+    if (current >= reviews.length) {
+        current = 0;
+    };
+    showReview(current);
+});
+
+prevBtn.addEventListener("click", () => {
+
+    current--;
+    if (current < 0) {
+        current = reviews.length - 1;
+    }
+    showReview(current);
+});
+
+dots.forEach((dot, index) => {
+
+    dot.addEventListener("click", () => {
+        current = index;
+        showReview(current);
+    });
+
+});
+
+setInterval(() => {
+
+    current++;
+    if (current >= reviews.length) {
+        current = 0;
+    };
+    showReview(current);
+}, 6000);
