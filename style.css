@@ -240,8 +240,7 @@ header .content .login-form .login-link a:hover {
 
 .home .home-text p {
     font-size: 1.8rem;
-    color: var(--gray);
-    font-weight: bold;
+    color: var(--light);
     margin-bottom: 2rem;
 }
 
@@ -612,6 +611,7 @@ header .content .login-form .login-link a:hover {
     cursor: pointer;
 }
 
+/* Shop section */
 .shop {
     padding: 4rem 8%;
     background: var(--white);
@@ -753,6 +753,130 @@ header .content .login-form .login-link a:hover {
     margin-right: .8rem;
 }
 
+/* Subscription Plan Section */
+
+.plans {
+    padding: 4rem 8%;
+    background: var(--light);
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.section-heading span {
+    display: inline-block;
+    color: #4f8cff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 3.5rem;
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+}
+
+.plan-card {
+    background: var(--white);
+    border-radius: 3rem;
+    padding: 4rem 3.5rem 2rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .4s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--primary);
+}
+
+.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -1.5rem;
+    right: 25px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.plan-header {
+    margin-bottom: 2rem;
+}
+
+.plan-name {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.plan-header h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.plan-header p {
+    font-size: 1.3rem;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.plan-features {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.plan-features li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--primary-bg);
+    color: var(--gray);
+}
+
+.plan-card .btn {
+    width: fit-content;
+    margin: 1rem auto 0;
+    position: relative;
+    transform: translateY(85%);
+}
+
+.btn {
+    position: absolute;
+    bottom: -0.5rem;
+    right: -5rem;
+}
+
 @media (max-width: 991px) {
 
     html {
@@ -812,6 +936,10 @@ header .content .login-form .login-link a:hover {
 
     .product-icons {
         display: none;
+    }
+
+    .plans-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -926,6 +1054,32 @@ header .content .login-form .login-link a:hover {
 
     .shop-btn-wrapper .btn {
         width: 50%;
+    }
+
+    .plans {
+        padding: 4rem 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .featured {
+        transform: none;
+    }
+
+    .featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .btn {
+        right: -12rem;
+        scale: calc(1.1);
     }
 }
 
