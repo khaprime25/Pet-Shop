@@ -124,7 +124,6 @@
             <h2>Our Pet Services</h2>
             <p>Everything your furry friends need under one roof.</p>
         </div>
-
         <div class="grid">
             <div class="service-card">
                 <i class="fa-solid fa-scissors"></i>
@@ -186,45 +185,226 @@
                 <a href="#" class="service-btn" data-service="training">Read More</a>
             </div>
         </div>
+        <div class="service-modal">
+            <div class="modal-box">
+                <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+
+                <div class="modal-content">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <ul id="modal-features"></ul>
+
+                    <div class="modal-buttons">
+                        <a href="#contact" class="contact-btn">Contact Us</a>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- Services Section Ends -->
 
-    <div class="service-modal">
+    <!-- Shop Section Starts -->
+    <section class="shop" id="shop">
+        <div class="heading">
+            <h2>Shop Our Products</h2>
+            <p>
+                Discover premium foods, treats, and essentials carefully selected
+                for your beloved pets.
+            </p>
+        </div>
 
-        <div class="modal-box">
-
-            <span class="close-modal">
-                <i class="fa-solid fa-xmark"></i>
-            </span>
-
-            <div class="modal-image">
-                <img id="modal-img" src="" alt="">
+        <div class="products-grid">
+            <!-- Product Card -->
+            <div class="product-card" data-product="1">
+                <div class="product-image">
+                    <img src="../Images/shop-item1.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="1"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Tasty Bite Dog Food</h3>
+                    <span>$16.00</span>
+                </div>
             </div>
 
-            <div class="modal-content">
+            <div class="product-card" data-product="2">
+                <div class="product-image">
+                    <img src="../Images/shop-item2.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="2"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Royal Canin</h3>
+                    <span>$18.95</span>
+                </div>
+            </div>
 
-                <h2 id="modal-title"></h2>
+            <div class="product-card" data-product="3">
+                <div class="product-image">
+                    <img src="../Images/shop-item3.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="3"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Whiskas Cat Food</h3>
+                    <span>$6.99</span>
+                </div>
+            </div>
 
-                <p id="modal-description"></p>
+            <div class="product-card" data-product="4">
+                <div class="product-image">
+                    <img src="../Images/shop-item4.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="4"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>P Cat Meroro</h3>
+                    <span>$3.99</span>
+                </div>
+            </div>
 
-                <ul id="modal-features"></ul>
+            <div class="product-card" data-product="5">
+                <div class="product-image">
+                    <img src="../Images/shop-item5.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="5"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Whiskas Chicken Flavour</h3>
+                    <span>$12.50</span>
+                </div>
+            </div>
 
-                <div class="modal-buttons">
-                    <a href="#contact" class="contact-btn">
-                        Contact Us
-                    </a>
+            <div class="product-card" data-product="6">
+                <div class="product-image">
+                    <img src="../Images/shop-item6.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="6"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Dentley Chicken</h3>
+                    <span>$9.99</span>
+                </div>
+            </div>
 
-                    <button class="close-btn">
-                        Close
-                    </button>
+            <div class="product-card" data-product="7">
+                <div class="product-image">
+                    <img src="../Images/shop-item7.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="7"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Cat Food (Salmon) </h3>
+                    <span>$24.99</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="8">
+                <div class="product-image">
+                    <img src="../Images/shop-item8.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="8"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Ocean Deli ( Salmon Trip )</h3>
+                    <span>$8.00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="9">
+                <div class="product-image">
+                    <img src="../Images/shop-item9.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="9"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Pet Care ( Premium )</h3>
+                    <span>$18.00</span>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="10">
+                <div class="product-image">
+                    <img src="../Images/shop-item10.jpg" alt="">
+                    <div class="product-icons">
+                        <a href="#shop"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#shop" class="view-product" data-product="10"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3>Olive Paws</h3>
+                    <span>$23.99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-btn-wrapper">
+            <button class="btn btn-primary" id="toggleProducts">Show More</button>
+        </div>
+
+        <!-- Product Card Details -->
+        <div class="service-modal">
+
+            <div class="modal-box">
+
+                <span class="close-modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+
+                <div class="modal-content">
+                    <div class="modal-badge" id="modal-badge"></div>
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-price" id="modal-price"></div>
+                    <p id="modal-description"></p>
+                    <ul id="modal-features"></ul>
+                    <div class="modal-buttons">
+                        <a href="#contact" class="contact-btn">Contact Us</a>
+                        <button class="close-btn">Close</button>
+                    </div>
                 </div>
 
             </div>
 
         </div>
-
-    </div>
-    <!-- Services Section Ends -->
-
+    </section>
+    <!-- Shop Section Ends -->
 
     <script src="script.js"></script>
 </body>
