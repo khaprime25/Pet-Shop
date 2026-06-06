@@ -15,9 +15,9 @@
         <div class="content">
             <div class="logo"><i class="fa-solid fa-paw"></i> <span>Bo Ma</span></div>
             <nav class="navbar">
-                <a href="" class="nav-link">Home</a>
-                <a href="" class="nav-link">About</a>
-                <a href="" class="nav-link">Servie</a>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#service" class="nav-link">Servie</a>
                 <a href="" class="nav-link">Shop</a>
                 <a href="" class="nav-link">Plan</a>
                 <a href="" class="nav-link">Contact</a>
@@ -29,8 +29,8 @@
             </div>
             <form action="" class="login-form">
                 <h3>Sign In</h3>
-                <input type="email" name="email" id="" class="input-box" placeholder="Enter your password ...">
-                <input type="password" name="password" id="" class="input-box" placeholder="Enter your password ...">
+                <input type="email" name="email" id="" class="input-box" placeholder="Enter your email .....">
+                <input type="password" name="password" id="" class="input-box" placeholder="Enter your password .....">
                 <div class="remember">
                     <input type="checkbox" name="" id="remember-me"><label for="remember-me">Remember me</label>
                 </div>
@@ -45,8 +45,7 @@
     <!-- Header Section Ends -->
 
     <!-- Home Section Starts -->
-
-    <section class="home">
+    <section class="home" id="home">
 
         <div class="home-text">
             <h3>Welcome to <span>Bo Ma</span></h3>
@@ -57,45 +56,174 @@
             <a href="#" class="btn btn-primary">Shop Now</a>
         </div>
     </section>
-
     <!-- Home Section Ends -->
 
     <!-- About Section Starts -->
-    <section class="about">
-
+    <section class="about" id="about">
         <div class="about-image">
             <img src="Images/about.png" alt="About Bo Ma">
         </div>
 
         <div class="about-content">
-
-            <span class="section-tag">
-                About Us
-            </span>
-
             <h2>
-                Caring For Every Pet Like Family
+                <span>Caring</span> For Every Pet Like Family
             </h2>
-
             <p>
-                At Bo Ma, we believe pets are more than companions—they are family.
+                At Bo Ma, we believe pets are more than companions like they are family.
                 We provide quality pet supplies, nutritious food, and trusted products
                 to help your furry friends live happier and healthier lives.
             </p>
-
             <p>
                 Whether you're a first-time pet owner or a lifelong animal lover,
                 our mission is to make pet care simple, affordable, and enjoyable.
             </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </section>
+    <!-- About Section Ends -->
 
-            <a href="#" class="btn btn-primary">
-                Learn More
+    <!-- Dog and Cat Food Section Starts -->
+    <div class="cat-food">
+        <div class="content">
+            <h3>Made For Curious <span>Cats</span></h3>
+            <p>
+                Explore elegant accessories and playful essentials designed to keep
+                your cat entertained, relaxed, and happy at home.
+            </p>
+            <div class="amount">Between $15.00 - $30.00</div>
+            <a href="" class="food-btn">
+                <img src="../Images/yellowDelivery.png" alt="">
             </a>
+        </div>
+        <div class="image">
+            <img src="../Images/cat-food.png" alt="">
+        </div>
+    </div>
+
+    <div class="dog-food">
+        <div class="image">
+            <img src="../Images/dog-food.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Premium <span>Dog Accessories</span></h3>
+            <p>
+                Discover stylish collars, durable leashes, cozy beds, and fun toys
+                designed to keep your dog comfortable, active, and happy every day.
+            </p>
+            <div class="amount">Starting from $15.00</div>
+            <a href="" class="food-btn">
+                <img src="../Images/delivery.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Dog and Cat Food Section Ends -->
+
+    <!-- Services Section Starts -->
+    <section class="services" id="service">
+        <div class="heading">
+            <h2>Our Pet Services</h2>
+            <p>Everything your furry friends need under one roof.</p>
+        </div>
+
+        <div class="grid">
+            <div class="service-card">
+                <i class="fa-solid fa-scissors"></i>
+                <h3>Pet Grooming</h3>
+                <p>
+                    Professional grooming services to keep your pets clean,
+                    comfortable, and looking their best.
+                </p>
+                <a href="#" class="service-btn" data-service="grooming">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h3>Health Care</h3>
+                <p>
+                    Routine checkups, vaccinations, and expert veterinary care
+                    for a healthy and happy life.
+                </p>
+                <a href="#" class="service-btn" data-service="health">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-bone"></i>
+                <h3>Pet Foods</h3>
+                <p>
+                    Nutritious foods and treats from trusted brands to support
+                    every stage of your pet's life.
+                </p>
+                <a href="#" class="service-btn" data-service="food">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Pet Hotel</h3>
+                <p>
+                    Safe, comfortable, and caring boarding facilities whenever
+                    you're away from home.
+                </p>
+                <a href="#" class="service-btn" data-service="hotel">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-spa"></i>
+                <h3>Pet Spa</h3>
+                <p>
+                    Relaxing spa treatments designed to help your pets feel
+                    refreshed and pampered.
+                </p>
+                <a href="#" class="service-btn" data-service="spa">Read More</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-paw"></i>
+                <h3>Training & Daycare</h3>
+                <p>
+                    Fun and engaging programs that help pets learn, socialize,
+                    and stay active.
+                </p>
+                <a href="#" class="service-btn" data-service="training">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="service-modal">
+
+        <div class="modal-box">
+
+            <span class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+
+            <div class="modal-image">
+                <img id="modal-img" src="" alt="">
+            </div>
+
+            <div class="modal-content">
+
+                <h2 id="modal-title"></h2>
+
+                <p id="modal-description"></p>
+
+                <ul id="modal-features"></ul>
+
+                <div class="modal-buttons">
+                    <a href="#contact" class="contact-btn">
+                        Contact Us
+                    </a>
+
+                    <button class="close-btn">
+                        Close
+                    </button>
+                </div>
+
+            </div>
 
         </div>
 
-    </section>
-    <!-- About Section Ends -->
+    </div>
+    <!-- Services Section Ends -->
 
 
     <script src="script.js"></script>
